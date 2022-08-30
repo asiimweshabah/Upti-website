@@ -1,0 +1,314 @@
+:root {
+  --bg-color: #d2b29c;
+  --blue-color: #032346;
+  --orng-color: #f06908;
+}
+
+.btn-sm {
+  background-color: var(--orng-color);
+  color: #f5f2f0;
+  border: #d7d7d7;
+}
+.btn-lg {
+  background-color: var(--orng-color);
+  border: #d7d7d7;
+  color: #f5f2f0;
+}
+.btn-lg:hover {
+  background-color: #ef7924;
+  color: black;
+}
+.img-f:hover {
+  border-radius: 20px;
+}
+/* .card {
+  border-radius: 20px;
+} */
+.btn-sm:hover {
+  background-color: #ef7924;
+  color: black;
+}
+
+.mr{
+  color: #023c7b;
+}
+.crs {
+  color: #023c7b;
+  font-size: 50px;
+  background-color: #dfbea6;
+}
+.logo-head {
+  margin-top: 10px;
+}
+.headnav {
+  background-color: #ee853a;
+}
+.navbar {
+  background-color: #f5f2f0;
+  border: 10px;
+}
+.bg {
+  background-color: #eb9557;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  margin-right: 15px;
+  color: black;
+}
+
+.img-fluid {
+  position: relative;
+}
+
+.home {
+  background-image: url("/pexels-andrea-piacquadio-3762806.jpg");
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+.home-section {
+  float: right;
+  margin-top: 90px;
+}
+
+/* .icon {
+  color: #e6e6e6;
+} */
+.abt-img {
+  border-radius: 90px;
+}
+.form {
+  width: 100%;
+}
+.Visions {
+  background-color: #d7d7d7;
+}
+
+.h-100 {
+  border: 5px;
+}
+
+.ml-5 {
+  width: 70px;
+}
+
+.logo {
+  width: 390px;
+}
+
+.f-logo {
+  width: 250px;
+}
+
+.btn-warning {
+  background-color: #e88a45;
+  border-radius: 60px;
+}
+.more {
+  background-color: #e6e6e6;
+}
+.business{
+  margin-left: 17.3%;
+}
+
+.oo {
+  color: #032346;
+}
+.lnk {
+  color: black;
+}
+.Container {
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+section {
+  width: 100%;
+}
+
+.text,
+.anm,
+.anim,
+.anim-r,
+.home-section {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+ @keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 70%;
+    width: 100%;
+  }
+} 
+.f-bg {
+  background-color: rgb(47, 47, 47);
+}
+
+
+.h-100,
+.mage {
+  animation-duration: 0.2s;
+  animation-name: zoomin;
+ 
+}
+
+ @keyframes zoomin {
+  from {
+    width:60%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.card1 {
+  animation-duration: 2.8s;
+  animation-name: slidein;
+ 
+}
+
+ @keyframes slidein {
+  from {
+  right: 100%;
+  }
+ }
+  
+ .card2 {
+  animation-duration: 2.8s;
+  animation-name: slidein;
+ 
+}
+
+ @keyframes slidein {
+  from {
+  right: 100%;
+  }
+ }
+  
+  /* to {
+   initial-value: 100%;
+  }
+} */
+/* @keyframes mymove2 {
+  from {
+    left: -30px;
+  }
+  to {
+    left: 0px;
+  }
+} */
+
+/* .card:hover {
+  background-color: #f4efec;
+  cursor: pointer;
+  transition: all is ease;
+  /* border-radius: 20px; */
+}
+/* .card-body:hover {
+  color: #0f0584;
+}
+
+.card {
+  overflow: hidden;
+}
+.col .card .card-body span {
+  transition: 0.5;
+} */ */
+/* .col .card .card-body span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, transparent, black);
+  animation: animate1 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.col .card .card-body span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, black);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(+100%);
+  }
+}
+
+.col .card .card-body span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, transparent, black);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.col .card .card-body span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to top, transparent, black);
+  animation: animate4 2s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.col .card span {
+  transition: 0.5;
+  opacity: 0;
+}
+.col .card:hover span {
+  opacity: 1;
+  position: relative;
+} */
+
